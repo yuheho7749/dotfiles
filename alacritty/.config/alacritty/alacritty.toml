@@ -1,0 +1,41 @@
+# Colors (Tokyo Night Storm variant)
+# Source https//github.com/zatchheems/tokyo-night-alacritty-theme
+
+[window]
+opacity = 0.7
+padding.x = 5
+padding.y = 5
+
+[font]
+size = 14
+normal.family = 'Hack Nerd Font Mono'
+bold.family = 'Hack Nerd Font Mono'
+italic.family = 'Hack Nerd Font Mono'
+bold_italic.family = 'Hack Nerd Font Mono'
+
+# Default colors
+[colors.primary]
+background = '#24283b'
+foreground = '#a9b1d6'
+
+# Normal colors
+[colors.normal]
+black   = '#32344a'
+red     = '#f7768e'
+green   = '#9ece6a'
+yellow  = '#e0af68'
+blue    = '#7aa2f7'
+magenta = '#ad8ee6'
+cyan    = '#449dab'
+white   = '#9699a8'
+
+# Bright colors
+[colors.bright]
+black   = '#444b6a'
+red     = '#ff7a93'
+green   = '#b9f27c'
+yellow  = '#ff9e64'
+blue    = '#7da6ff'
+magenta = '#bb9af7'
+cyan    = '#0db9d7'
+white   = '#acb0d0'
