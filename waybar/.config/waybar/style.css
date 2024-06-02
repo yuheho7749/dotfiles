@@ -5,7 +5,7 @@
     font-weight: bold;
     font-size: 12px;
     min-height: 0;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 window#waybar {
@@ -24,7 +24,8 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    /* color: #313244; */
+    color: #5e608a;
     margin-right: 5px;
 }
 
