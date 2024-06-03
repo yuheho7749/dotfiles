@@ -1,5 +1,5 @@
-require("vim_keymaps")
-require("vim_settings")
+require("vim-keymaps")
+require("vim-settings")
 
 if vim.g.vscode then
 
