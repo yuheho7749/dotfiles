@@ -1,3 +1,3 @@
 add_newline = false
 
-format = '$directory$git_branch$git_status$character'
+format = '$conda$directory$git_branch$git_status$character'

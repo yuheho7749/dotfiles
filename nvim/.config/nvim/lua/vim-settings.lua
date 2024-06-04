@@ -8,7 +8,8 @@ vim.opt.splitright = true
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.wrap = false
+vim.opt.wrap = true
+vim.opt.linebreak = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.scrolloff = 5
 
