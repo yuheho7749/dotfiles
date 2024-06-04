@@ -11,4 +11,8 @@ alias neofetch='fastfetch --config neofetch.jsonc'
 
 PS1='[\u@\h \W]\$ '
 
+# Miniconda
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+# Starship
 eval "$(starship init bash)"
