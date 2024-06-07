@@ -17,16 +17,13 @@ if [[ "$#" -ne 0 ]]; then
 	fi
 fi 
 
-
 # Set wallpapers accordig to theme
 if [[ "$theme" == "anime" ]]; then
+	echo $theme > $conf
 	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch-chan.png"
 	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch-chan.png"
 else
-	theme="default"
+	echo "default" > $conf
 	hyprctl hyprpaper preload "~/Pictures/wallpapers/archbtw.png"
 	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/archbtw.png"
 fi
-
-# Write theme to save file
-echo $theme > $conf
