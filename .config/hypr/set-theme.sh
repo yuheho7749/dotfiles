@@ -24,6 +24,6 @@ if [[ "$theme" == "anime" ]]; then
 	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch-chan.png"
 else
 	echo "default" > $conf
-	hyprctl hyprpaper preload "~/Pictures/wallpapers/archbtw.png"
-	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/archbtw.png"
+	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch.png"
+	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch.png"
 fi
