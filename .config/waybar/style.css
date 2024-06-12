@@ -153,7 +153,7 @@ tooltip {
 }
 
 #clock {
-    color: #fab387;
+    /* color: #fab387; */
     border-radius: 20px;
     margin-right: 5px;
     border-right: 0px;
