@@ -9,7 +9,8 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias neofetch='fastfetch --config ~/.config/fastfetch/neofetch-small-config.jsonc'
+alias neofetch='fastfetch --config ~/.config/fastfetch/neofetch-config.jsonc'
+alias uwufetch='fastfetch --config ~/.config/fastfetch/uwufetch-config.jsonc'
 
 PS1='[\u@\h \W]\$ '
 
