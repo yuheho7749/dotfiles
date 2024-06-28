@@ -1,0 +1,46 @@
+# --- settings ---
+set shell bash
+set hidden false 
+set ignorecase true
+
+set cursorpreviewfmt "\033[7m"
+
+# Use own script (kitty) for image preview
+set previewer ~/.config/lf/lf-kitty-preview.sh
+set cleaner ~/.config/lf/lf-kitty-clean.sh
+
+# --- mappings ---
+map c 		# unbind defaults
+map d
+map <space>
+
+map ` !true
+map . set hidden!
+
+map <enter> open
+map m toggle
+map y copy
+map p paste
+map x cut
+map dd delete
+map r rename
+map a :push %mkdir<space>
+map R reload
+map <esc> clear
+
+map i $less $f
+
+# --- commands (after the colon ":") ---
+cmd q quit
+
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
