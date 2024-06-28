@@ -3,7 +3,7 @@ set shell bash
 set hidden false 
 set ignorecase true
 
-set cursorpreviewfmt "\033[7m"
+# set cursorpreviewfmt "\033[7m"
 
 # Use own script (kitty) for image preview
 set previewer ~/.config/lf/lf-kitty-preview.sh
