@@ -26,6 +26,7 @@ map dd delete
 map r rename
 map a :push %mkdir<space>
 map R reload
+map C clear
 map <esc> clear
 
 map i $less $f
