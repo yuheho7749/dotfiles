@@ -15,6 +15,7 @@ alias uwufetch='fastfetch --config ~/.config/fastfetch/uwufetch-config.jsonc'
 PS1='[\u@\h \W]\$ '
 
 # Miniconda
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 # Starship

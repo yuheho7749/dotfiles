@@ -1,3 +1,15 @@
 add_newline = false
 
 format = '$conda$directory$git_branch$git_status$character'
+
+[conda]
+ignore_base = false
+style = 'bold green'
+symbol = ' '
+format = '[\($symbol$environment\)]($style) '
+
+[directory]
+style = 'bold blue'
+
+[git_branch]
+style = 'bold yellow'
