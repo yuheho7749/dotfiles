@@ -18,6 +18,8 @@ return {
 					"pyright",
 					"clangd",
 					"rust_analyzer",
+					"html",
+					"cssls"
 				},
 			}
 
@@ -42,6 +44,8 @@ return {
 			default_setup("pyright")
 			default_setup("clangd")
 			default_setup("rust_analyzer")
+			default_setup("html")
+			default_setup("cssls")
 
 			vim.api.nvim_create_autocmd('LspAttach', {
 				desc = 'LSP Actions',
