@@ -9,6 +9,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias clearall='printf "\e[H\e[3J"; clear' # clear screen and scrollback buffer
 alias neofetch='fastfetch --config ~/.config/fastfetch/neofetch-config.jsonc'
 alias uwufetch='fastfetch --config ~/.config/fastfetch/uwufetch-config.jsonc'
 
