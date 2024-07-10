@@ -160,7 +160,8 @@
 		"format-alt": "{icon}     {time}",
 		// "format-good": "", // An empty format will hide the module
 		// "format-full": "",
-		"format-icons": ["", "", "", "", ""]
+		"format-icons": ["", "", "", "", ""],
+		"tooltip-format": "{timeTo}\n\nCharge cycles: {cycles}\nHealth: {health}%"
 	},
 	"battery#bat2": {
 		"bat": "BAT2"
@@ -194,7 +195,7 @@
 		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-		"on-click": "bluetoothctl power $(if [[ $(bluetoothctl show | grep 'Powered' | awk '{print $2}') = 'yes' ]]; then echo 'off'; else echo 'on'; fi)"
+		"on-click": "if [[ $(bluetoothctl show | grep 'Powered' | awk '{print $2}') = 'yes' ]]; then bluetoothctl disconnect; bluetoothctl power off; else bluetoothctl power on; fi"
 	},
 	"pulseaudio": {
 		// "scroll-step": 1, // %, can be a float
