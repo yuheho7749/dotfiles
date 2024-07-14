@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
 # Read theme
-conf=~/.config/hypr/theme.conf
-theme=`cat $conf`
+THEME_FILE=/tmp/hypr-theme
+if [ ! -f $THEME_FILE ]; then
+	echo "default" > $THEME_FILE
+fi
+THEME=`cat $THEME_FILE`
 
 # Run correct version based on theme
-if [[ "$theme" == "anime" ]]; then
+if [[ "$THEME" == "anime" ]]; then
 	pidof hyprlock || hyprlock --config ~/.config/hypr/hyprlock-anime.conf
 else
 	pidof hyprlock || hyprlock

@@ -1,29 +1,33 @@
 #!/usr/bin/env bash
 
 # Read theme
-conf=~/.config/hypr/theme.conf
-theme=`cat $conf`
+THEME_FILE=/tmp/hypr-theme
+if [ ! -f $THEME_FILE ]; then
+	echo "default" > $THEME_FILE
+fi
+THEME=`cat $THEME_FILE`
 
+# Parse args
 if [[ "$#" -ne 0 ]]; then
 	if [[ "$1" == "--toggle" ]] || [[ "$1" == "-t" ]]; then
-		if [[ "$theme" == "anime" ]]; then
-			theme="default"
+		if [[ "$THEME" == "anime" ]]; then
+			THEME="default"
 		else
-			theme="anime"
+			THEME="anime"
 		fi
 	else
 		# Use new theme if explicitly supplied
-		theme=$1
+		THEME=$1
 	fi
 fi 
 
-# Set wallpapers accordig to theme
-if [[ "$theme" == "anime" ]]; then
-	echo $theme > $conf
+# Set wallpapers according to theme
+if [[ "$THEME" == "anime" ]]; then
+	echo $THEME > $THEME_FILE
 	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch-chan.png"
 	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch-chan.png"
 else
-	echo "default" > $conf
+	echo "default" > $THEME_FILE
 	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch.png"
 	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch.png"
 fi
