@@ -15,7 +15,9 @@ return {
 					"cpp",
 					"rust",
 					"html",
-					"css"
+					"css",
+					"javascript",
+					"typescript"
 				},
 				sync_install = false,
 				highlight = { enable = true },

@@ -19,7 +19,8 @@ return {
 					"clangd",
 					"rust_analyzer",
 					"html",
-					"cssls"
+					"cssls",
+					"tsserver"
 				},
 			}
 
@@ -46,6 +47,7 @@ return {
 			default_setup("rust_analyzer")
 			default_setup("html")
 			default_setup("cssls")
+			default_setup("tsserver")
 
 			vim.api.nvim_create_autocmd('LspAttach', {
 				desc = 'LSP Actions',
