@@ -179,12 +179,12 @@
 	},
 	"network": {
 		// "interface": "wlp2*", // (Optional) To force the use of this interface
-		"format-wifi": "     {signalStrength}%",
-		"format-ethernet": "{ipaddr}/{cidr} ",
-		"tooltip-format": "{essid} - {ifname} via {gwaddr} ",
-		"format-linked": "{ifname} (No IP) ",
 		"format-disconnected": "Disconnected ⚠",
-		"format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+		"format-wifi": "     {signalStrength}%",
+		"format-alt": "   {essid} - {ifname}",
+		"tooltip-format": "   {essid} - {ifname}"
+		// "format-ethernet": "{ipaddr}/{cidr} ",
+		// "format-linked": "{ifname} (No IP) ",
 	},
 	"bluetooth": {
 		"format": " {status}",
