@@ -179,10 +179,11 @@
 	},
 	"network": {
 		// "interface": "wlp2*", // (Optional) To force the use of this interface
-		"format-disconnected": "Disconnected ⚠",
+		"format-disconnected": "⚠  Disconnected",
 		"format-wifi": "     {signalStrength}%",
-		"format-alt": "   {essid} - {ifname}",
-		"tooltip-format": "   {essid} - {ifname}"
+		"format-ethernet": "  Connected",
+		"tooltip-format-wifi": "     {essid} - {ifname}",
+		"tooltip-format-ethernet": "  Ethernet - {ifname}"
 		// "format-ethernet": "{ipaddr}/{cidr} ",
 		// "format-linked": "{ifname} (No IP) ",
 	},
