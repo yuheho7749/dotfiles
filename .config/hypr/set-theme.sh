@@ -24,8 +24,8 @@ fi
 # Set wallpapers according to theme
 if [[ "$THEME" == "anime" ]]; then
 	echo $THEME > $THEME_FILE
-	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch-chan.png"
-	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch-chan.png"
+	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch-tan.png"
+	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch-tan.png"
 else
 	echo "default" > $THEME_FILE
 	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch.png"
