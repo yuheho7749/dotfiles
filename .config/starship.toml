@@ -1,11 +1,18 @@
 add_newline = false
 
-format = '$conda$directory$git_branch$git_status$character'
+format = '$python$conda$directory$git_branch$git_status$character'
+
+[python]
+detect_extensions = []
+detect_files = []
+style = 'bold green'
+symbol = ' '
+format = '[\($symbol$virtualenv\)]($style) '
 
 [conda]
 ignore_base = false
 style = 'bold green'
-symbol = ' '
+# symbol = ' '
 format = '[\($symbol$environment\)]($style) '
 
 [directory]
