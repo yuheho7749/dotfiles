@@ -14,6 +14,7 @@ alias neofetch='fastfetch --config ~/.config/fastfetch/neofetch-config.jsonc'
 alias uwufetch='fastfetch --config ~/.config/fastfetch/uwufetch-config.jsonc'
 
 alias nman='MANPAGER="nvim +Man!" man'
+alias todo='nvim ~/Documents/obsidian-vault/TODO.md'
 
 alias mpv-mono-track='mpv --lavfi-complex='[aid1][aid2]amix[ao]' $1'
 
