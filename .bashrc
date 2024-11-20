@@ -13,6 +13,10 @@ alias clearall='printf "\e[H\e[3J"; clear' # clear screen and scrollback buffer
 alias neofetch='fastfetch --config ~/.config/fastfetch/neofetch-config.jsonc'
 alias uwufetch='fastfetch --config ~/.config/fastfetch/uwufetch-config.jsonc'
 
+alias nman='MANPAGER="nvim +Man!" man'
+
+alias mpv-mono-track='mpv --lavfi-complex='[aid1][aid2]amix[ao]' $1'
+
 PS1='[\u@\h \W]\$ '
 
 # Miniconda
