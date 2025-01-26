@@ -4,6 +4,7 @@ return {
 		build = ":TSUpdate",
 		config = function ()
 			local configs = require("nvim-treesitter.configs")
+			vim.treesitter.language.register("cuda", "hip")
 
 			configs.setup({
 				ensure_installed = {
