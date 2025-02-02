@@ -20,7 +20,8 @@ return {
 					"rust_analyzer",
 					"html",
 					"cssls",
-					"ts_ls"
+					"ts_ls",
+					"jdtls"
 				},
 			}
 
@@ -52,6 +53,7 @@ return {
 			default_setup("html")
 			default_setup("cssls")
 			default_setup("ts_ls")
+			default_setup("jdtls")
 
 			vim.api.nvim_create_autocmd('LspAttach', {
 				desc = 'LSP Actions',

@@ -20,7 +20,8 @@ return {
 					"css",
 					"javascript",
 					"typescript",
-					"cuda"
+					"cuda",
+					"java"
 				},
 				sync_install = false,
 				highlight = { enable = true },
