@@ -10,7 +10,7 @@
 
 window#waybar {
     background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    color: #cdd6d4;
 }
 
 tooltip {
@@ -25,7 +25,7 @@ tooltip {
 #workspaces button {
     padding: 5px;
     /* color: #313244; */
-    color: #5e608a;
+    color: #5e606a;
     margin-right: 5px;
 }
 
@@ -47,7 +47,7 @@ tooltip {
 
 #workspaces button:hover {
     background: #11111b;
-    color: #cdd6f4;
+    color: #cdd6d4;
     border-radius: 20px;
 }
 
