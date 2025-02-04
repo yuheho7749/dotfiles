@@ -12,6 +12,7 @@ alias grep='grep --color=auto'
 alias clearall='printf "\e[H\e[3J"; clear' # clear screen and scrollback buffer
 alias neofetch='fastfetch --config ~/.config/fastfetch/neofetch-config.jsonc'
 alias uwufetch='fastfetch --config ~/.config/fastfetch/uwufetch-config.jsonc'
+alias pikafetch='fastfetch --config ~/.config/fastfetch/pikachu-config.jsonc'
 
 alias nman='MANPAGER="nvim +Man!" man'
 alias todo='nvim ~/Documents/obsidian-vault/TODO.md'
