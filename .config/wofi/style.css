@@ -1,8 +1,8 @@
-window {
+#window {
 	margin: 0px;
-	border: 1px solid #7A7478;
-	background-color: #111111;
+	border: 2px solid #414868;
 	border-radius: 5px;
+	background-color: #24283b;
 	font-family: HackNerdFontMono;
 	font-size: 16px;
 	opacity: 0.95;
@@ -10,21 +10,25 @@ window {
 
 #input {
 	margin: 5px;
-	border: none;
-	color: #c3c6ca;
-	background-color: #222222;
+	border: 1px solid #24283b;
+	color: #c0caf5;
+	background-color: #24283b;
+}
+
+#input image {
+	color: #c0caf5;
 }
 
 #inner-box {
 	margin: 5px;
 	border: none;
-	background-color: #111111;
+	background-color: #24283b;
 }
 
 #outer-box {
 	margin: 5px;
 	border: none;
-	background-color: #111111;
+	background-color: #24283b;
 }
 
 #scroll {
@@ -35,9 +39,15 @@ window {
 #text {
 	margin: 5px;
 	border: none;
-	color: #c3c6ca;
+	color: #c0caf5;
 }
 
 #entry:selected {
-	background-color: #222222;
+	background-color: #414868;
+	font-weight: normal;
+}
+
+#text:selected {
+	background-color: #414868;
+	font-weight: normal;
 }
