@@ -10,7 +10,7 @@
 
 window#waybar {
     background: rgba(21, 18, 27, 0);
-    color: #cdd6d4;
+    color: #dbdbdb;
 }
 
 tooltip {
@@ -18,7 +18,7 @@ tooltip {
     border-radius: 10px;
     border-width: 1.5px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: #111111;
     transition: 0.3s;
 }
 
@@ -40,14 +40,14 @@ tooltip {
 }
 
 #workspaces button.urgent {
-    color: #11111b;
+    color: #111111;
     background: #a6e3a1;
     border-radius: 20px;
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6d4;
+    background: #111111;
+    color: #dbdbdb;
     border-radius: 20px;
 }
 

@@ -18,7 +18,9 @@ REMIND_LEVEL=50
 #: 		Add file entries for WARNING_LEVEL and CRITICAL_LEVEL if you want them to display only once
 BATTERY_REMIND_FILE=/tmp/battery-reminder
 
-if [ $BATTERY_PERCENTAGE -le $CRITICAL_LEVEL ] && [ "$BATTERY_STATE" = "discharging" ]; then
+if [ -f $BATTERY_REMIND_FILE ] && [ "$BATTERY_STATE" = "charging" ] ; then
+	rm $BATTERY_REMIND_FILE
+elif [ $BATTERY_PERCENTAGE -le $CRITICAL_LEVEL ] && [ "$BATTERY_STATE" = "discharging" ]; then
 	dunstify "CRITICAL BATTERY!" "${BATTERY_PERCENTAGE}% battery remaining!" -i "battery" -u critical 
 elif [ $BATTERY_PERCENTAGE -le $WARNING_LEVEL ] && [ "$BATTERY_STATE" = "discharging" ]; then
 	dunstify "Low Battery!" "${BATTERY_PERCENTAGE}% battery remaining!" -i "battery" -u normal 

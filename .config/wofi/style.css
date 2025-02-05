@@ -11,7 +11,7 @@ window {
 #input {
 	margin: 5px;
 	border: none;
-	color: #d3c6ca;
+	color: #c3c6ca;
 	background-color: #222222;
 }
 
@@ -35,7 +35,7 @@ window {
 #text {
 	margin: 5px;
 	border: none;
-	color: #d3c6ca;
+	color: #c3c6ca;
 }
 
 #entry:selected {
