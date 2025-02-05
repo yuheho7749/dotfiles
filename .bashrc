@@ -25,5 +25,9 @@ PS1='[\u@\h \W]\$ '
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$(gem env user_gemhome)"
+export PATH="$GEM_HOME/bin:$PATH"
+
 # Starship
 eval "$(starship init bash)"
