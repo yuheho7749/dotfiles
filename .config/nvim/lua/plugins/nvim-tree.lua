@@ -5,8 +5,8 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
-			vim.g.loaded_netrw = 1
-			vim.g.loaded_netrwPlugin = 1
+			-- vim.g.loaded_netrw = 1
+			-- vim.g.loaded_netrwPlugin = 1
 
 			local function my_on_attach(bufnr)
 				local api = require "nvim-tree.api"
@@ -58,6 +58,9 @@ return {
 
 			require("nvim-tree").setup({
 				on_attach = my_on_attach,
+                view = {
+                    adaptive_size = true,
+                }
 			})
 
 			vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
