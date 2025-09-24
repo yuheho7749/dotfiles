@@ -11,8 +11,8 @@ THEME=`cat $THEME_FILE`
 if [[ "$#" -ne 0 ]]; then
 	if [[ "$1" == "--toggle" ]] || [[ "$1" == "-t" ]]; then
 		if [[ "$THEME" == "anime" ]]; then
-			THEME="gundam"
-		elif [[ "$THEME" == "gundam" ]]; then
+			THEME="meme"
+		elif [[ "$THEME" == "meme" ]]; then
 			THEME="default"
 		else
 			THEME="anime"
@@ -26,14 +26,11 @@ fi
 # Set wallpapers according to theme
 if [[ "$THEME" == "anime" ]]; then
 	echo $THEME > $THEME_FILE
-	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch-tan.png"
-	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch-tan.png"
-elif [[ "$THEME" == "gundam" ]]; then
+	hyprctl hyprpaper reload ",~/Pictures/wallpapers/arch-tan.png"
+elif [[ "$THEME" == "meme" ]]; then
 	echo $THEME > $THEME_FILE
-	hyprctl hyprpaper preload "~/Pictures/wallpapers/mobile-suit-gundam.png"
-	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/mobile-suit-gundam.png"
+	hyprctl hyprpaper reload ",~/Pictures/wallpapers/i-swear-its-only-a-meme.png"
 else
 	echo "default" > $THEME_FILE
-	hyprctl hyprpaper preload "~/Pictures/wallpapers/arch.png"
-	hyprctl hyprpaper wallpaper ",~/Pictures/wallpapers/arch.png"
+	hyprctl hyprpaper reload ",~/Pictures/wallpapers/arch.png"
 fi

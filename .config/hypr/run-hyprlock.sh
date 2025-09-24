@@ -10,8 +10,6 @@ THEME=`cat $THEME_FILE`
 # Run correct version based on theme
 if [[ "$THEME" == "anime" ]]; then
 	pidof hyprlock || hyprlock --config ~/.config/hypr/hyprlock-anime.conf
-elif [[ "$THEME" == "gundam" ]]; then
-	pidof hyprlock || hyprlock --config ~/.config/hypr/hyprlock-gundam.conf
 else
 	pidof hyprlock || hyprlock
 fi
